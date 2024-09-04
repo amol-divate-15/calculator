@@ -1,0 +1,18 @@
+#a{
+    background-color: skyblue; height:620px ; width: 1500px; padding-top: 100px;
+}
+#b{
+    background-color: rgb(71, 67, 67); height: 500px; width: 400px; margin-left: 550px;
+}
+.c{
+    height: 50px;
+}
+.d{
+    background-color: aliceblue; height: 50px; border-radius: 20px;
+}
+button{
+        height: 55px; width: 76px; margin: 10px; border-radius: 20px; border-color: brown; font-size: xx-large;
+}
+button:hover{
+    box-shadow: 2px 2px lightblue; transform: scale(1.2, 1.2);
+}

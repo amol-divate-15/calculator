@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div id="a">
+        <div id="b"  style="border: double; border-radius: 30px; border-color: brown;">
+            <div class="c">
+                <span style="font-size: 50px; font-weight: bold; color: red; margin-left: 25px;">CALCULATOR</span>
+            </div>
+            <div class="d">
+                <input type="text" name="dis" style="height: 45px; width: 393px; border-radius: 20px;">
+            </div>
+            <table>
+                <tr>
+                    <th><button onclick="document.getElementsByName('dis')[0].value=''" style="background-color: orangered;">CLR</button></th>
+                    <th><button onclick="document.getElementsByName('dis')[0].value=document.getElementsByName('dip')[0].value.slice(0,-1)" style="background-color: orangered;">DEL</button></th>
+                    <th><button onclick="document.getElementsByName('dis')[0].value+='%'" style="background-color: orangered;">%</button></th>
+                    <th><button onclick="document.getElementsByName('dis')[0].value+='/'" style="background-color: orangered;">/</button></th>
+                </tr>
+
+                <tr>
+                    <th><button onclick="document.getElementsByName('dis')[0].value+='7'">7</button></th>
+                    <th><button onclick="document.getElementsByName('dis')[0].value+='8'">8</button></th>
+                    <th><button onclick="document.getElementsByName('dis')[0].value+='9'">9</button></th>
+                    <th><button onclick="document.getElementsByName('dis')[0].value+='*'" style="background-color: orangered;">*</button></th>
+                </tr>
+
+                <tr>
+                    <th><button onclick="document.getElementsByName('dis')[0].value+='4'">4</button></th>
+                    <th><button onclick="document.getElementsByName('dis')[0].value+='5'">5</button></th>
+                    <th><button onclick="document.getElementsByName('dis')[0].value+='6'">6</button></th>
+                    <th><button onclick="document.getElementsByName('dis')[0].value+='-'" style="background-color: orangered;">-</button></th>
+                </tr>
+
+                <tr>
+                    <th><button onclick="document.getElementsByName('dis')[0].value+='1'">1</button></th>
+                    <th><button onclick="document.getElementsByName('dis')[0].value+='2'">2</button></th>
+                    <th><button onclick="document.getElementsByName('dis')[0].value+='3'">3</button></th>
+                    <th><button onclick="document.getElementsByName('dis')[0].value+='+'" style="background-color: orangered;">+</button></th>
+                </tr>
+
+                <tr>
+                    <th><button onclick="document.getElementsByName('dis')[0].value+='**'">^</button></th>
+                    <th><button onclick="document.getElementsByName('dis')[0].value+='0'">0</button></th>
+                    <th><button onclick="document.getElementsByName('dis')[0].value+='.'">.</button></th>
+                    <th><button onclick="document.getElementsByName('dis')[0].value=eval(document.getElementsByName('dis')[0].value)" style="background-color: greenyellow;">=</button></th>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
